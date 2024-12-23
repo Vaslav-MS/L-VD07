@@ -16,7 +16,7 @@ def index():
     if form.validate_on_submit():
         name = form.name.data
         return redirect(url_for('hello', name=name))
-    return render_template('index.html', form=form)
+    return render_template('index_1.html', form=form)
 
 @app.route('/hello/<name>')
 def hello(name):
